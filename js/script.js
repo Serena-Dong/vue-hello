@@ -2,13 +2,12 @@ const data = {
     text: "messaggio"
 }
 
-
-createApp({
+const app = Vue.createApp({
     data() {
         return{
-            message: 'ciao'
+            message: data
         }
     }
 });
 
-createApp.mount('#app')
+app.mount('#app')
